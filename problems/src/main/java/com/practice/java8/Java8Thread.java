@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.practice;
+package com.practice.java8;
 
 public class Java8Thread {
 
@@ -13,7 +13,6 @@ public class Java8Thread {
 			                try {
 								Thread.sleep(5000);
 							} catch (InterruptedException e) {
-								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
 			                System.out.println(Thread.currentThread().getName());

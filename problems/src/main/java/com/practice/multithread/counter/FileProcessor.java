@@ -2,7 +2,7 @@ package com.practice.multithread.counter;
 
 public class FileProcessor {
 
-	static int  noOfFileProcessed = 0;
+	static volatile int  noOfFileProcessed = 0;
 
 	public void processFile() {
 
