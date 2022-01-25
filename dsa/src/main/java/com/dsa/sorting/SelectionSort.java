@@ -38,7 +38,7 @@ public class SelectionSort {
 
 				}
 			}
-			/* now we have got minimum element in subarray,
+			/* now we have got minimum element in subArray,
 			 *  swap this with first element. 
 			 *  */
 			int temp = arr[i];

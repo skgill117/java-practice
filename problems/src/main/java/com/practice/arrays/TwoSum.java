@@ -36,7 +36,7 @@ public class TwoSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int num[] = { 3, 2, 4 };
+		int num[] = { 3, 2, 4, 1, 0};
 		int[] result = twoSum(num, 6);
 		for (int i : result) {
 			System.out.println(i);
