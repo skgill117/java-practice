@@ -8,13 +8,17 @@ public class ReverseString {
 		
 		char [] arr = s.toCharArray();
 		
-		int left;
+		int left = 0;
 		int right = arr.length - 1;
-		for(left = 0; left < right; left++, right--) {
+		
+		while(left < right) {
 			
 			char temp = arr[right];
 			arr[right] = arr[left];
 			arr[left] = temp;
+			
+			left++;
+			right--;
 			
 		}
 		
