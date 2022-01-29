@@ -22,11 +22,11 @@ public class LinkedList {
 		}
 	}
 	
-	 private Node push(int new_data)
+	 private Node push(int newData)
     {
         /* 1 & 2: Allocate the Node &
                   Put in the data*/
-        Node new_node = new Node(new_data);
+        Node new_node = new Node(newData);
  
         /* 3. Make next of new Node as head */
         new_node.next = head;
@@ -51,6 +51,38 @@ public class LinkedList {
 		}
 		
 		return prev;
+	}
+	
+	/* Function to pairwise swap elements of a
+	linked list */
+	private Node pairWiseSwap(Node head)
+	{
+	     
+	    // If linked list is empty or there is only
+	    // one node in list
+	    if (head == null || head.next == null)
+	        return head;
+	 
+	    // Fix the head and its next explicitly to
+	    // avoid many if else in while loop
+	    Node curr = head.next.next;
+	    Node prev = head;
+	    head = head.next;
+	    head.next = prev;
+	 
+	    // Fix remaining nodes
+	    while (curr != null && curr.next != null)
+	    {
+	        prev.next = curr.next;
+	        prev = curr;
+	        Node next = curr.next.next;
+	        curr.next.next = curr;
+	        curr = next;
+	    }
+	     
+	    prev.next = curr;
+	 
+	    return head;
 	}
 	
 	 // Returns true if there is a loop in linked
@@ -94,6 +126,10 @@ public class LinkedList {
 
 		System.out.println("Given Linked list");
 		list.printList(head);
+		System.out.println();
+		System.out.println("Swap adjecent nodes ");
+		head = list.pairWiseSwap(head);
+		list.printList(head);
 		head = list.reverse(head);
 		System.out.println("");
 		System.out.println("Reversed linked list ");
@@ -108,5 +144,7 @@ public class LinkedList {
             System.out.println("No Loop");
 
 	}
+
+	
 
 }
