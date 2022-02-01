@@ -7,13 +7,13 @@ public class SwapTwoNumbers {
 		int a = 10;
 		int b = 20;
 		
-		int tempA = a;
-		int tempB = b;
+		a = a + b;
+		b = a - b;
+		a = a - b;
 		
-		a = (tempA+tempB)-tempA;
-		b = (tempA+tempB)-tempB;
 		
-		System.out.println("a = " + a +"  b = "+b);
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
 		
 
 	}

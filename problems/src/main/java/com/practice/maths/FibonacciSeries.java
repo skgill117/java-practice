@@ -8,13 +8,9 @@ public class FibonacciSeries {
 		int b = 1;
 		int c = 0;
 
-		System.out.print(a + ", " + b + ", ");
-
 		while (c < 100) {
-
+			System.out.print(a + ", ");
 			c = a + b;
-
-			System.out.print(c + ", ");
 			a = b;
 			b = c;
 		}

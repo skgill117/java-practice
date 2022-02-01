@@ -1,4 +1,4 @@
-package com.practice;
+package com.practice.maths;
 
 public class NumbersSum {
 
