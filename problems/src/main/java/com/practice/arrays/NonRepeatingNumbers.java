@@ -10,6 +10,8 @@ public class NonRepeatingNumbers {
 		
 		int[] arr = {4,3,6,8,23,56,43,98,44,6,3,23,98,564,87,23};
 		System.out.println(Arrays.toString(arr));
+		
+		
 		Map<Integer, Integer> map = new HashMap<>();
 		for(int i = 0; i < arr.length; i++) {
 			
