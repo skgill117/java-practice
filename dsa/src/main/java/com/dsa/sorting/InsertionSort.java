@@ -32,7 +32,7 @@ public class InsertionSort {
 
 				arr[j] = arr[j-1];  // shift item right
 
-				--j;                  // go one more left
+				j--;                  // go one more left
 				swaps++;
 
 			}
