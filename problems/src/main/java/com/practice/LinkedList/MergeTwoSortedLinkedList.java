@@ -1,7 +1,7 @@
-package com.dsa.LinkedList;
+package com.practice.LinkedList;
 
-public class LinkedList2 {
-
+public class MergeTwoSortedLinkedList {
+	
 	private Node head;
 
 	static class Node {
@@ -74,8 +74,8 @@ public class LinkedList2 {
 		 * Let us create two sorted linked lists to test the methods Created lists:
 		 * llist1: 5->10->15, llist2: 2->3->20
 		 */
-		LinkedList2 llist1 = new LinkedList2();
-		LinkedList2 llist2 = new LinkedList2();
+		MergeTwoSortedLinkedList llist1 = new MergeTwoSortedLinkedList();
+		MergeTwoSortedLinkedList llist2 = new MergeTwoSortedLinkedList();
 
 		llist1.addToTheLast(new Node(5));
 		llist1.addToTheLast(new Node(10));

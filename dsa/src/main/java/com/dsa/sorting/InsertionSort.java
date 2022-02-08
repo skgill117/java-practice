@@ -2,6 +2,8 @@ package com.dsa.sorting;
 
 import java.util.Arrays;
 
+//time complexity O(n^2),
+//but less swaps and comparisons
 public class InsertionSort {
 
 	private static int comparisons;
@@ -10,8 +12,9 @@ public class InsertionSort {
 
 	public static void main(String[] args) {
 		int[] arr = { 67, 34, 88, 99, 33, 66, 21, 9, 4, 38, 56, 99 };
+		System.out.println(Arrays.toString(arr));
 		insertionSort(arr);
-		Arrays.stream(arr).forEach(n -> System.out.print(n + " "));
+		System.out.println(Arrays.toString(arr));
 		System.out.println();
 		System.out.println("comparisons : " + comparisons + "------swaps : " + swaps);
 

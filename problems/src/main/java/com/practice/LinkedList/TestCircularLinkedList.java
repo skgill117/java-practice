@@ -1,4 +1,4 @@
-package com.dsa.LinkedList;
+package com.practice.LinkedList;
 
 public class TestCircularLinkedList {
 

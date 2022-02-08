@@ -18,7 +18,7 @@ public class LongestPalindrome {
 			String palindrome = "";
 			for (int i = 0; i < n; i++) {
 				
-				for(int j = i+1; j <= n; j++) {
+				for(int j = i+1; j < n; j++) {
 					String subString = s.substring(i, j);
 						
 					int palindromeSize = calculatePalindromeSize(subString);
