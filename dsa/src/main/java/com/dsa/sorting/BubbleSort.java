@@ -19,7 +19,7 @@ public class BubbleSort {
 	public static void main(String[] args) {
 		int[] arr = { 67, 34, 88, 99, 33, 66, 21, 9, 4, 38, 56, 99 };
 		bubbleSort(arr);
-		Arrays.stream(arr).forEach(n -> System.out.print(n + " "));
+		System.out.println(Arrays.toString(arr));
 		System.out.println();
 		System.out.println("comparisons : " + comparisons + "------swaps : " + swaps);
 

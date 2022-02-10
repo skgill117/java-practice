@@ -83,30 +83,32 @@ public class LinkedList {
 			 System.out.print(curr.data + "  ");
 			 curr = curr.next;
 		 }
+		 System.out.println();
 	 }
 	
 
 	public static void main(String[] args) {
 		
 		LinkedList ll = new LinkedList();
+		System.out.println("inserting at first");
 		ll.insertAtFirst(4);
 		ll.insertAtFirst(5);
 		ll.insertAtFirst(37);
 		ll.display();
-		System.out.println();
+		System.out.println("inserting at last");
 		ll.insertAtLast(37);
 		ll.insertAtLast(48);
 		ll.display();
-		System.out.println();
+		System.out.println("inserting after node");
 		ll.insertAfter(ll.head.next.next, 55);
 		ll.display();
-		System.out.println();
+		System.out.println("removing first");
 		ll.removeFirst();
 		ll.display();
-		System.out.println();
+		System.out.println("removing last");
 		ll.removeLast();
 		ll.display();
-		System.out.println();
+		System.out.println("removing by placing");
 		ll.removeNode(2);
 		ll.display();
 
