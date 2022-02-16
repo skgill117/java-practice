@@ -84,7 +84,7 @@ public class DoublyLinkedList {
 	public static void main(String[] args) {
 
 		DoublyLinkedList dll = new DoublyLinkedList();
-		System.out.println("insertint at first");
+		System.out.println("inserting at first");
 		dll.insertAtFirst(10);
 		dll.insertAtFirst(9);
 		dll.insertAtFirst(8);
