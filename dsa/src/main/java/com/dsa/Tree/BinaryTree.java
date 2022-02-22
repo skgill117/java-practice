@@ -2,9 +2,21 @@ package com.dsa.Tree;
 
 import java.util.Scanner;
 
-public class Tree {
+public class BinaryTree {
 
 	static Scanner sc;
+
+	static class Node {
+
+		Node left;
+		Node right;
+		int data;
+
+		public Node(int data) {
+			this.data = data;
+		}
+
+	}
 
 	public static Node createTree() {
 		System.out.println("enter data : ");
@@ -71,14 +83,13 @@ public class Tree {
 		System.out.println("InOrder traversal");
 
 		inOrder(root);
-		
+
 		System.out.println();
-        
+
 		System.out.println("PreOrder traversal");
 
 		preOrder(root);
-		
-		
+
 		System.out.println();
 
 		System.out.println("PostOrder traversal");
