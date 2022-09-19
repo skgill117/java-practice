@@ -1,6 +1,6 @@
 package com.dsa.recursion;
 
-//print counting decreasing order.
+//print counting increasing order.
 public class Recursion2 {
 
 	public static void main(String[] args) {

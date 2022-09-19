@@ -15,7 +15,7 @@ public class Java8Thread {
 							} catch (InterruptedException e) {
 								e.printStackTrace();
 							}
-			                System.out.println(Thread.currentThread().getName());
+			                System.out.println("child thread name- " + Thread.currentThread().getName());
 		                   };
 		
 		Thread t = new Thread(r,"t2");

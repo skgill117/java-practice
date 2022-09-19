@@ -16,6 +16,7 @@ public class Student {
 		this.registrationNumber = registrationNumber;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		System.out.println("hashcode method called");
@@ -24,22 +25,27 @@ public class Student {
 		result = prime * result + ((registrationNumber == null) ? 0 : registrationNumber.hashCode());
 		return result;
 	}
-
+	 
+	
 	@Override
 	public boolean equals(Object obj) {
-		System.out.println("equals method called");
-		return false;
-		/*
-		 * System.out.println("equals method called"); if (this == obj) return true; if
-		 * (obj == null) return false; if (getClass() != obj.getClass()) return false;
-		 * Student other = (Student) obj; if (registrationNumber == null) { if
-		 * (other.registrationNumber != null) return false; } else if
-		 * (!registrationNumber.equals(other.registrationNumber)) return false; return
-		 * true;
-		 */
+		System.out.println("equals method called"); // return false;
+
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (registrationNumber == null) {
+			if (other.registrationNumber != null)
+				return false;
+		} else if (!registrationNumber.equals(other.registrationNumber))
+			return false;
+		return true;
+
 	}
-	
-	
-	
+	 
 
 }

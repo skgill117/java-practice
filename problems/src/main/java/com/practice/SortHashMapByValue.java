@@ -33,15 +33,12 @@ public class SortHashMapByValue {
 
 		// get the entry set
 		Set<Entry<String, Integer>> entrySet = scores.entrySet();
-		System.out.println(entrySet);
 
 		// create a list since the set is unordered
 		List<Entry<String, Integer>> entryList = new ArrayList<>(entrySet);
-		System.out.println(entryList);
 
 		// sort the list by value
 		entryList.sort((x, y) -> x.getValue().compareTo(y.getValue()));
-		System.out.println(entryList);
 
 		// populate the new hash map
 		for (Entry<String, Integer> e : entryList)
