@@ -1,10 +1,7 @@
 package com.dsa.Tree;
 
 import java.util.ArrayDeque;
-import java.util.PriorityQueue;
 import java.util.Queue;
-
-import com.dsa.Tree.BinaryTree3.Node;
 
 /*Level order traversal using queue
 in O(N) time complexity*/
