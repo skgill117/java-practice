@@ -34,7 +34,7 @@ public class KthHighestArray {
 			}
 
 		}
-		return arr[arr.length - 3];
+		return arr[arr.length - k];
 	}
 
 }
