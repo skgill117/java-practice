@@ -14,11 +14,11 @@ public class Exponential {
 
 	private static double power(double x, int n) {
 		double result = 1;
-		for (int i = 1; i <= n; i++) {
+		for (int i = 1; i <= n/2; i++) {
 			result = result * x;
 
 		}
-		return result;
+		return result * result;
 	}
 
 	
