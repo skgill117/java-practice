@@ -1,10 +1,10 @@
 package com.practice.map;
 
-public class Student {
+public class College {
 
 	private String registrationNumber;
 
-	public Student(String registrationNumber) {
+	public College(String registrationNumber) {
 		this.registrationNumber = registrationNumber;
 	}
 
@@ -16,7 +16,6 @@ public class Student {
 		this.registrationNumber = registrationNumber;
 	}
 
-	
 	@Override
 	public int hashCode() {
 		System.out.println("hashcode method called");
@@ -25,8 +24,7 @@ public class Student {
 		result = prime * result + ((registrationNumber == null) ? 0 : registrationNumber.hashCode());
 		return result;
 	}
-	 
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		System.out.println("equals method called"); // return false;
@@ -37,7 +35,7 @@ public class Student {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Student other = (Student) obj;
+		College other = (College) obj;
 		if (registrationNumber == null) {
 			if (other.registrationNumber != null)
 				return false;
@@ -46,6 +44,5 @@ public class Student {
 		return true;
 
 	}
-	 
 
 }

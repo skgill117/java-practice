@@ -23,11 +23,11 @@ public class ReverseAInteger {
 
 		// int x = 1534236469;
 		// int x = 1534236412;
-		int x = 2147447222;
+		int num = 2147447222;
 		// int x = 1534238412;
-		System.out.println(x);
-		System.out.println(reverse(x));
-		System.out.println(reverse2(x));
+		System.out.println(num);
+		System.out.println(reverse(num));
+		System.out.println(reverse2(num));
 
 	}
 
@@ -35,25 +35,25 @@ public class ReverseAInteger {
 	 * @param x
 	 * @return
 	 */
-	public static int reverse(int x) {
+	public static int reverse(int num) {
 
 		int reverse = 0;
 		int rem = 0;
-		while (x != 0) {
+		while (num != 0) {
 
-			rem = x % 10;
+			rem = num % 10;
 			reverse = reverse * 10 + rem;
-			x = x / 10;
+			num = num / 10;
 		}
 		return reverse;
 
 	}
 
-	public static int reverse2(int x) {
+	public static int reverse2(int num) {
 		int rev = 0;
-		while (x != 0) {
-			int rem = x % 10;
-			x = x / 10;
+		while (num != 0) {
+			int rem = num % 10;
+			num = num / 10;
 			if (rev + rem > Integer.MAX_VALUE / 10)
 				return 0;
 			if (rev + rem < Integer.MIN_VALUE / 10)
