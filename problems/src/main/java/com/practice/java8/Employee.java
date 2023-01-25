@@ -66,6 +66,9 @@ public class Employee {
 		
 		empList.stream().filter(x -> x.getName().startsWith("A")).forEach(System.out :: println);
 		
+		Map<String, Employee> map2 = empList.stream().collect(Collectors.toMap(x -> x.getName(), x -> x, (oldVal, newVal) -> newVal));
+		System.out.println(map2);
+		
 		
 		
 

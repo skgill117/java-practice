@@ -2,10 +2,8 @@ package com.dsa.sorting;
 
 import java.util.Arrays;
 
-
 /**
- * @author shivk
- * better than bubblesort in terms of swaps.
+ * @author shivk better than bubblesort in terms of swaps.
  *
  */
 public class SelectionSort {
@@ -17,7 +15,7 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		int[] arr = { 67, 34, 88, 99, 33, 66, 21, 9, 4, 38, 56, 99 };
 		selectionSort(arr);
-		Arrays.stream(arr).forEach(n -> System.out.print(n + " "));
+		System.out.println(Arrays.toString(arr));
 		System.out.println();
 		System.out.println("comparisons : " + comparisons + "------swaps : " + swaps);
 
@@ -38,9 +36,9 @@ public class SelectionSort {
 
 				}
 			}
-			/* now we have got minimum element in subArray,
-			 *  swap this with first element. 
-			 *  */
+			/*
+			 * now we have got minimum element in subArray, swap this with first element.
+			 */
 			int temp = arr[i];
 			arr[i] = arr[min_idx];
 			arr[min_idx] = temp;
