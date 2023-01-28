@@ -22,7 +22,7 @@ public class FirstNprimeNumbers {
 
 	private static boolean checkPrimeNumber(int startPoint) {
 		boolean isPrime = true;
-		for (int i = 2; i <= startPoint / 2; i++) {
+		for (int i = 2; i * i <= startPoint; i++) {
 
 			if (startPoint % i == 0) {
 				isPrime = false;
