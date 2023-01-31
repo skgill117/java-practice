@@ -13,7 +13,8 @@ public class LRUCacheTest {
 		
 		cache.put(4, 4);
 		
-		System.out.println(cache);
+		System.out.println(cache.get(4));
+		System.out.println(cache.get(2));
 
 	}
 

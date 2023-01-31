@@ -5,13 +5,15 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AtomicIntegerTest implements Runnable {
 	
 	private AtomicInteger atomicInteger = new AtomicInteger();
+	private int x = 0;
 	
 	@Override
 	public void run() {
 		
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < 5000; i++) {
 			
 			atomicInteger.getAndIncrement();
+			x++;
 		}
 		
 	}
@@ -28,7 +30,8 @@ public class AtomicIntegerTest implements Runnable {
 		t1.join();
 		t2.join();
 		
-		System.out.println(atomicIntegerTest.atomicInteger.get());
+		System.out.println("atomic integer result -> " + atomicIntegerTest.atomicInteger.get());
+		System.out.println("normal integer result -> " + atomicIntegerTest.x);
 		
 
 	}

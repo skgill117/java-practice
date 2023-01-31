@@ -2,13 +2,13 @@ package com.practice.multithreading;
 
 public class VolatileTest implements Runnable {
 
-	private boolean stopRequested;
+	private static boolean stopRequested = false;
 
 	public void run() {
 		while (!stopRequested) {
 			System.out.println(stopRequested);
 		}
-		System.out.println(this.stopRequested);
+		System.out.println(stopRequested);
 		System.out.println("child completed");
 	}
 
@@ -18,7 +18,7 @@ public class VolatileTest implements Runnable {
 		Thread t1 = new Thread(test);
 		t1.start();
 		Thread.sleep(1000);
-		test.stopRequested = true;
+		stopRequested = true;
 		System.out.println("main completed");
 
 	}

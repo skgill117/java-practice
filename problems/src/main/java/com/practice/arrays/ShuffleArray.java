@@ -10,7 +10,7 @@ public class ShuffleArray {
 		Random rand = new Random();
 
 		for (int i = 0; i < array.length; i++) {
-			int randomIndexToSwap = rand.nextInt(array.length);
+			int randomIndexToSwap = rand.nextInt(array.length-1);
 			int temp = array[randomIndexToSwap];
 			array[randomIndexToSwap] = array[i];
 			array[i] = temp;

@@ -5,6 +5,8 @@ package com.dsa.Tree.BST;
 time complexity - O(logn)
 space complexty - O(1)
 
+deleting a node
+
 */
 
 public class BinarySearchTree1 {

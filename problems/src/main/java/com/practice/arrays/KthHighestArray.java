@@ -19,7 +19,7 @@ public class KthHighestArray {
 
 	private static int findKthHighest(int[] arr, int k) {
 
-		for (int i = 0; i <= k; i++) {
+		for (int i = 0; i < k; i++) {
 
 			for (int j = 1; j < (arr.length - i); j++) {
 
