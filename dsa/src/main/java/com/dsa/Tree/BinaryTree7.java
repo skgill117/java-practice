@@ -1,7 +1,7 @@
 package com.dsa.Tree;
 
 /*
- * here we find lowest common ancester (lca) of two given nodes
+ * here we find lowest common ancestor (lca) of two given nodes
 and distance between two nodes.
 
  */
@@ -60,7 +60,7 @@ public class BinaryTree7 {
 
 		if (root == null)
 			return 0;
-		
+
 		if (root.data == num)
 			return 0;
 

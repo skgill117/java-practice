@@ -1,7 +1,7 @@
 package com.dsa.Tree.BST;
 
 /*
- * here we find lowest common ancester (lca) of two given nodes
+ * here we find lowest common ancestor (lca) of two given nodes
 and distance between two nodes.
 But it is easier than Binary Tree, because by the key we 
 are able to find location is left or right. 

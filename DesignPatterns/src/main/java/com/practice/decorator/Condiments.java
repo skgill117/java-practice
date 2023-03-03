@@ -1,4 +1,4 @@
-package com.practice.deorator;
+package com.practice.decorator;
 
 public abstract class Condiments extends Beverage {
 
