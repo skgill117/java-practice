@@ -19,8 +19,18 @@ public class Java8Thread {
 		                   };
 		
 		Thread t = new Thread(r,"t2");
+		
 		t.start();
+		
 		System.out.println("main thread name- " + Thread.currentThread().getName());
+		
+		new Thread(new Runnable() {
+			public void run() {
+				System.out.println("-----"+ Thread.currentThread().getName());
+			}
+		}).start();
+		
+		
 		
 		
 		
